@@ -118,12 +118,12 @@
                     </div>
                     <div class="direction">
                         <h3>Formulario</h3>
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://formspree.io/f/xeoqkbbr" method="POST"></form>>
                             <fieldset>
                                 <label for="name">Nombre:</label>
                                 <input type="text" id="name" name="name" required>
 
-                                <label for="surname">Apellido:</label> <!-- fijarse para la validacion de javascr-->
+                                <label for="surname">Apellido:</label> 
                                 <input type="text" id="surname" name="surname" required>
 
                                 <label for="email">Email:</label>
@@ -154,7 +154,7 @@
                                 <div class="verification">
                                     <div class="checking">
                                         <label id="accept">Acepto los términos y condiciones</label>
-                                        <input type="checkbox" id="agree" name="agree">
+                                        <input type="checkbox" id="agree" name="agree" required>
                                     </div>
                                     
                                     <div class="send"><button type="submit">Enviar</button></div>
