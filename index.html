@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa "Estilo 360"</title>
+
+    
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="logo">
+        <h1>Tienda de Ropa "Estilo 360"</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#bienvenida">Bienvenida</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="intento">
+                <section id="bienvenida">
+                    <h2>Bienvenidos a Estilo 360</h2>
+                    <p>Nos complace darte la bienvenida a nuestra tienda de ropa,
+                        un espacio diseñado para ofrecerte las últimas tendencias en moda.
+                        En Estilo Único, creemos que cada persona merece destacar con su propio estilo,
+                        y estamos aquí para ayudarte a encontrar las prendas perfectas para ti.</p>
+                </section>
+
+                <section id="productos">
+                    <h2>Productos</h2>
+                    <ul>
+                        <li>Camisetas</li>
+                        <li>Jeans</li>
+                        <li>Vestidos</li>
+                        <li>Ropa deportiva</li>
+                        <li>Accesorios</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section id="novedades">
+                <h2>Novedades</h2>
+                <div class="products">
+                    <div class="card">
+                        <img src="img/camiseta_normal.jpg" alt="Camisetas">
+                        <div class="contenido">
+                            <p class="letra"><strong>Camisetas</strong><br>Nueva colección disponible</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/jeans.jpg" alt="Jeans">
+                        <div class="contenido">
+                            <p class="letra"><strong>Jeans</strong><br>Variedad de estilos y tallas</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/vestido.jpg" alt="Vestidos">
+                        <div class="contenido">
+                            <p class="letra"><strong>Vestidos</strong><br>Perfectos para cualquier ocasión</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/ropa_deportiva.jpg" alt="Ropa Deportiva">
+                        <div class="contenido">
+                            <p class="letra"><strong>Ropa Deportiva</strong><br>Confort y estilo para tu entrenamiento</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/accesorios.jpg" alt="Accesorios">
+                        <div class="contenido">
+                            <p class="letra"><strong>Accesorios</strong><br>Complementos perfectos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <div class="informations">
+                    <div class="direction">
+                        <h3>Reseñas</h3> 
+                        <p style="text-align:center;"><b>Lo que dicen nuestros clientes</b>:</p>
+                        <div class="reseñas">
+                        <div class="reseña"> 
+                            <p>"Gran variedad de productos y excelente calidad. Definitivamente volveré."</p> 
+                            <p>- María Gómez</p> </div> 
+                        <div class="reseña"> 
+                            <p>"Me encantaron los vestidos, perfectos para cualquier ocasión."</p>
+                            <p>- Juan Pérez</p> 
+                        </div> 
+                        <div class="reseña"> 
+                            <p>"La atención al cliente es de primera. Muy recomendable."</p> 
+                            <p>- Ana Martínez</p> </div>
+                        </div>
+                        
+                    </div>
+                    <div class="direction">
+                        <h3>Formulario</h3>
+                        <form id="contactForm">
+                            <fieldset>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" required>
+
+                                <label for="surname">Apellido:</label> <!-- fijarse para la validacion de javascr-->
+                                <input type="text" id="surname" name="surname" required>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="phone">Teléfono:</label>
+                                <input type="tel" id="phone" name="phone" pattern="\d+"
+                                    title="El teléfono solo debe contener números" required>
+
+                                <label>País</label>
+                                <select name="country" id="country" required="required">
+                                    <option value="" selected="selected">Selecciona un país</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                </select>
+
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" placeholder="Escribe tu mensaje..."
+                                    required></textarea>
+
+                                <div class="verification">
+                                    <div class="checking">
+                                        <label id="accept">Acepto los términos y condiciones</label>
+                                        <input type="checkbox" id="agree" name="agree">
+                                    </div>
+                                    
+                                    <div class="send"><button type="submit">Enviar</button></div>
+                                </div>
+
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img
+                    src="img/facebook.png" alt="facebook" width="36" height="36"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img
+                    src="img/tiktok.jpg" alt="tiktok" width="36" height="36"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img
+                    src="img/instagram.png" alt="instagram" width="36" height="36"></a>
+        </div>
+        <p>&copy; 2024 Tienda de Ropa "Estilo 360". Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
